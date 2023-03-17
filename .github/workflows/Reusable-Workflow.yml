@@ -3,4 +3,6 @@ on:
 jobs:
   build_workflow:
     uses: ./.github/workflows/build.yml
-    secrets: inherit
+    secrets:
+      TOKEN1: ${{ secrets.TOKEN1 }}
+      

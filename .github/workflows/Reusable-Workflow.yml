@@ -5,3 +5,4 @@ jobs:
     uses: ./.github/workflows/build.yml
     with:
       NODE_VERSION: '14.x'
+    secrets: inherit

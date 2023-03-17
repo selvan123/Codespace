@@ -1,7 +1,9 @@
 name: Build
 on:
   workflow_call:
-
+    secrets:
+        TOKEN1:
+          required: true
 jobs:
   build:
     runs-on: ubuntu-latest

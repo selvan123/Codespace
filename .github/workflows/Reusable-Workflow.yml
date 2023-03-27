@@ -1,5 +1,10 @@
 on:
   workflow_dispatch:
+    inputs:
+        input:
+          description: "Test"
+          required: false
+          default: "World"
 jobs:
   build_workflow:
     uses: ./.github/workflows/build.yml

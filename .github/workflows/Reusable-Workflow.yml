@@ -1,7 +1,7 @@
 on:
   workflow_dispatch:
     inputs:
-        input:
+        param1:
           description: "Test"
           required: false
           default: "World"

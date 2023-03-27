@@ -12,4 +12,4 @@ jobs:
       run: |
         echo "The GitHub Action Secret will be masked:  "
         echo ${{ secrets.TOKEN1 }}
-        echo "Value of Test : ${{ github.event.inputs.Test }}"
+        echo "Value of Test : ${{ github.event.inputs.param1 }}"

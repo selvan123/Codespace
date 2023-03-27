@@ -11,6 +11,15 @@ jobs:
     - name: Step 1 - Echo out a GitHub Actions Secret & Param
       if: ${{ github.event.inputs.param1 == 'World'}}
       run: |
+        echo "Step 1  "
+        echo "The GitHub Action Secret will be masked:  "
+        echo ${{ secrets.TOKEN1 }}
+        echo "Value of Test : ${{ github.event.inputs.param1 }}"
+      
+    - name: Step 1 - Echo out a GitHub Actions Secret & Param
+      if: ${{ github.event.inputs.param1 != 'World'}}
+      run: |
+        echo "Step 2  "
         echo "The GitHub Action Secret will be masked:  "
         echo ${{ secrets.TOKEN1 }}
         echo "Value of Test : ${{ github.event.inputs.param1 }}"
